@@ -1,0 +1,19 @@
+.header {
+  padding-block: 1rem;
+}
+
+.header a {
+  flex: 1;
+}
+
+.header img {
+  width: 14.8rem;
+}
+
+.header ul {
+  gap: 4rem;
+}
+
+.header .nav-item {
+  color: #555;
+}
