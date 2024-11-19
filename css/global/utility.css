@@ -7,3 +7,39 @@
     max-width: 1200px;
   }
 }
+
+/** layout  **/
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: space-between;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/** components **/
+
+/* Button */
+.button {
+  display: inline-block;
+  padding-block: 8px;
+  border-radius: 50px;
+  color: #333 !important;
+  transition: 0.2s ease-in-out;
+}
+
+.button-primary {
+  padding-inline: 30px;
+  background-color: var(--color-primary);
+}
+.button-primary:hover {
+  background-color: var(--color-primary-darker);
+}
