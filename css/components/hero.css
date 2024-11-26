@@ -1,0 +1,29 @@
+.hero {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: calc(100vh - 90.2px);
+  align-items: start;
+  /* background-color: green; */
+}
+
+.hero__text {
+  align-self: center;
+}
+
+.hero h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #333;
+}
+
+.hero__more {
+  font-weight: 500;
+  color: var(--color-primary);
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid;
+}
+
+.hero img {
+  max-width: 90%;
+  justify-self: right;
+}
