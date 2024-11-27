@@ -1,0 +1,28 @@
+.footer {
+  background-color: #37383d;
+  text-align: center;
+  color: #fff;
+}
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 1.6rem;
+}
+.footer__link {
+  cursor: pointer;
+}
+.footer__logo {
+  width: 50px;
+  margin-inline: auto;
+  margin-block: 5rem;
+}
+
+.footer__copyright-notice {
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.footer .author {
+  color: #fff;
+}
