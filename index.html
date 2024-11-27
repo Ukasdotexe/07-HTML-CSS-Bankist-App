@@ -197,6 +197,50 @@
           own product.
         </p>
       </footer>
+
+      <div class="bank-account">
+        <button class="btn--close">×</button>
+        <h2 class="bank-account__header">
+          Open your bank account <br />
+          in just <span class="highlight">5 minutes</span>
+        </h2>
+        <form class="account-form">
+          <!-- First Name -->
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" />
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" />
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" />
+        </form>
+        <div class="button button-primary cta__sign-up">Next Step &rarr;</div>
+      </div>
+      <script>
+        const modal = document.querySelector('.bank-account');
+        const overlay = document.createElement('div'); // Create overlay
+        overlay.classList.add('modal-overlay');
+        document.body.appendChild(overlay);
+
+        const openModalBtn = document.querySelector('.cta__sign-up'); // Modify if button to open modal differs
+        const closeModalBtn = document.querySelector('.btn--close');
+
+        // Open Modal
+        const openModal = () => {
+          modal.style.display = 'block';
+          overlay.style.display = 'block';
+        };
+
+        // Close Modal
+        const closeModal = () => {
+          modal.style.display = 'none';
+          overlay.style.display = 'none';
+        };
+
+        // Event Listeners
+        openModalBtn.addEventListener('click', openModal);
+        closeModalBtn.addEventListener('click', closeModal);
+        overlay.addEventListener('click', closeModal); // Close modal by clicking outside
+      </script>
     </main>
   </body>
 </html>

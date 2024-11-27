@@ -16,3 +16,8 @@
   font-weight: 500;
   color: #000;
 }
+.cta__sign-up:active {
+  .bank-account {
+    visibility: visible;
+  }
+}
